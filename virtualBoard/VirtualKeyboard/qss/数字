@@ -1,0 +1,232 @@
+QWidget#DigitalInputPanel
+{
+	min-width: 319px;
+	max-width: 319px;
+	min-height: 360px;
+	max-height: 360px;
+}
+QWidget#widget_background
+{
+	background-color: #DEDEDE;
+	border: 1px solid #FFFFFF;
+}
+
+QLineEdit#lineEdit_digital_text
+{
+    height: 40px;
+    color: back;
+    background: #4a4a4a;
+    font-size:40px;
+}
+
+QLineEdit#lineEdit_digital_text[warning=&quot;YES&quot;]
+{
+    height: 40px;
+    color: red;
+    background: #4a4a4a;
+    font-size:40px;
+}
+QLineEdit#lineEdit_digital_text[warning=&quot;NO&quot;]
+{
+    height: 40px;
+    color: back;
+    background: #4a4a4a;
+    font-size:40px;
+}
+
+QLabel#label_title
+{
+	font-size:  22px;
+	color: #000000;
+}
+
+QLineEdit#lineEdit_digital_text{	
+	min-height: 38px;	
+	max-height: 38px;	
+	min-width: 148px;
+	max-width: 148px;	
+	padding-left: 10px;	
+	border-image: url(:/images/input_label.png);
+}
+
+
+
+QPushButton#panelButton_enter, #panelButton_cancel
+{
+		min-height: 38px;
+		min-width: 63px;
+		max-height: 38px;
+		max-width: 63px;
+}
+
+QPushButton#panelButton_enter
+{
+	border-image: url(:/images/enter_normal.png);
+}
+
+QPushButton:pressed#panelButton_enter
+{
+	border-image: url(:/images/enter_selected.png);
+}
+
+QPushButton#panelButton_cancel
+{
+	border-image: url(:/images/cancel_normal.png);
+}
+
+QPushButton:pressed#panelButton_cancel
+{
+	border-image: url(:/images/cancel_selected.png);
+}
+
+QPushButton[belong=&quot;digital_panel&quot;]
+{
+	min-width: 70px;
+	max-width: 70px;
+	min-height: 57px;
+	max-height: 57px;
+}
+
+QPushButton#panelButton_0
+{
+	min-width: 143px;
+	max-width: 143px;
+	border-image: url(:/images/digital_normal_0.png);
+}
+
+QPushButton:hover#panelButton_0
+{
+	border-image: url(:/images/digital_hover_0.png);
+}
+
+QPushButton#panelButton_1
+{
+	border-image: url(:/images/digital_normal_1.png);
+}
+
+QPushButton:hover#panelButton_1
+{
+	border-image: url(:/images/digital_hover_1.png);
+}
+
+QPushButton#panelButton_2
+{
+	border-image: url(:/images/digital_normal_2.png);
+}
+
+QPushButton:hover#panelButton_2
+{
+	border-image: url(:/images/digital_hover_2.png);
+}
+
+QPushButton#panelButton_3
+{
+	border-image: url(:/images/digital_normal_3.png);
+}
+
+QPushButton:hover#panelButton_3
+{
+	border-image: url(:/images/digital_hover_3.png);
+}
+
+QPushButton#panelButton_4
+{
+	border-image: url(:/images/digital_normal_4.png);
+}
+
+QPushButton:hover#panelButton_4
+{
+	border-image: url(:/images/digital_hover_4.png);
+}
+
+QPushButton#panelButton_5
+{
+	border-image: url(:/images/digital_normal_5.png);
+}
+
+QPushButton:hover#panelButton_5
+{
+	border-image: url(:/images/digital_hover_5.png);
+}
+
+QPushButton#panelButton_6
+{
+	border-image: url(:/images/digital_normal_6.png);
+}
+
+QPushButton:hover#panelButton_6
+{
+	border-image: url(:/images/digital_hover_6.png);
+}
+
+QPushButton#panelButton_7
+{
+	border-image: url(:/images/digital_normal_7.png);
+}
+
+QPushButton:hover#panelButton_7
+{
+	border-image: url(:/images/digital_hover_7.png);
+}
+
+QPushButton#panelButton_8
+{
+	border-image: url(:/images/digital_normal_8.png);
+}
+
+QPushButton:hover#panelButton_8
+{
+	border-image: url(:/images/digital_hover_8.png);
+}
+
+QPushButton#panelButton_9
+{
+	border-image: url(:/images/digital_normal_9.png);
+}
+
+QPushButton:hover#panelButton_9
+{
+	border-image: url(:/images/digital_hover_9.png);
+}
+
+QPushButton#panelButton_minus
+{
+	min-height: 117px;
+	max-height: 117px;
+	border-image: url(:/images/digital_normal_minus.png);
+}
+
+QPushButton:hover#panelButton_minus
+{
+	border-image: url(:/images/digital_hover_minus.png);
+}
+
+QPushButton#panelButton_plus
+{
+	border-image: url(:/images/digital_normal_plus.png);
+}
+
+QPushButton:hover#panelButton_plus
+{
+	border-image: url(:/images/digital_hover_plus.png);
+}
+
+QPushButton#panelButton_dot
+{
+	border-image: url(:/images/digital_normal_dot.png);
+}
+
+QPushButton:hover#panelButton_dot
+{
+	border-image: url(:/images/digital_hover_dot.png);
+}
+
+QPushButton#panelButton_del
+{
+	border-image: url(:/images/del_normal.png);
+}
+
+QPushButton:hover#panelButton_del
+{
+	border-image: url(:/images/del_hover.png);
+}

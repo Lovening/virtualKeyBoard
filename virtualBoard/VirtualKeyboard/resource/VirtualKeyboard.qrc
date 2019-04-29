@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/digital_hover_dot.png</file>
+        <file>images/digital_normal_dot.png</file>
+        <file>images/cancel_normal.png</file>
+        <file>images/cancel_selected.png</file>
+        <file>images/del_hover.png</file>
+        <file>images/del_normal.png</file>
+        <file>images/digital_hover_0.png</file>
+        <file>images/digital_hover_1.png</file>
+        <file>images/digital_hover_2.png</file>
+        <file>images/digital_hover_3.png</file>
+        <file>images/digital_hover_4.png</file>
+        <file>images/digital_hover_5.png</file>
+        <file>images/digital_hover_6.png</file>
+        <file>images/digital_hover_7.png</file>
+        <file>images/digital_hover_8.png</file>
+        <file>images/digital_hover_9.png</file>
+        <file>images/digital_hover_minus.png</file>
+        <file>images/digital_hover_plus.png</file>
+        <file>images/digital_normal_0.png</file>
+        <file>images/digital_normal_1.png</file>
+        <file>images/digital_normal_2.png</file>
+        <file>images/digital_normal_3.png</file>
+        <file>images/digital_normal_4.png</file>
+        <file>images/digital_normal_5.png</file>
+        <file>images/digital_normal_6.png</file>
+        <file>images/digital_normal_7.png</file>
+        <file>images/digital_normal_8.png</file>
+        <file>images/digital_normal_9.png</file>
+        <file>images/digital_normal_minus.png</file>
+        <file>images/digital_normal_plus.png</file>
+        <file>images/enter_normal.png</file>
+        <file>images/enter_selected.png</file>
+        <file>images/input_label.png</file>
+        <file>rsc/fontlib</file>
+    </qresource>
+</RCC>

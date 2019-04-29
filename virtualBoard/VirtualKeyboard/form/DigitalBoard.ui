@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DigitalBoard</class>
+ <widget class="QWidget" name="DigitalBoard">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>335</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Panel</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#DigitalInputPanel
+{
+        min-width: 319px;
+        max-width: 319px;
+        min-height: 360px;
+        max-height: 360px;
+}
+QWidget#widget_background
+{
+        background-color: #DEDEDE;
+        border: 1px solid #FFFFFF;
+}
+
+QLineEdit#lineEdit_digital_text
+{
+    height: 40px;
+    color: back;
+    background: #4a4a4a;
+    font-size:40px;
+}
+
+QLineEdit#lineEdit_digital_text[warning=&quot;YES&quot;]
+{
+    height: 40px;
+    color: red;
+    background: #4a4a4a;
+    font-size:40px;
+}
+QLineEdit#lineEdit_digital_text[warning=&quot;NO&quot;]
+{
+    height: 40px;
+    color: back;
+    background: #4a4a4a;
+    font-size:40px;
+}
+
+
+QLabel#label_title
+{
+        font-size:  22px;
+        color: #000000;
+}
+
+QLineEdit#lineEdit_digital_text{
+        min-height: 38px;
+        max-height: 38px;
+        min-width: 148px;
+        max-width: 148px;
+        padding-left: 10px;
+        border-image: url(:/images/input_label.png);
+}
+
+
+
+QPushButton#panelButton_enter, #panelButton_cancel
+{
+                min-height: 38px;
+                min-width: 63px;
+                max-height: 38px;
+                max-width: 63px;
+}
+
+QPushButton#panelButton_enter
+{
+        border-image: url(:/images/enter_normal.png);
+}
+
+QPushButton:pressed#panelButton_enter
+{
+        border-image: url(:/images/enter_selected.png);
+}
+
+QPushButton#panelButton_cancel
+{
+        border-image: url(:/images/cancel_normal.png);
+}
+
+QPushButton:pressed#panelButton_cancel
+{
+        border-image: url(:/images/cancel_selected.png);
+}
+
+QPushButton
+{
+        min-width: 70px;
+        max-width: 70px;
+        min-height: 57px;
+        max-height: 57px;
+}
+
+QPushButton[belong=&quot;digital_panel&quot;]
+{
+        min-width: 70px;
+        max-width: 70px;
+        min-height: 57px;
+        max-height: 57px;
+}
+
+
+QPushButton#panelButton_0
+{
+        min-width: 143px;
+        max-width: 143px;
+        border-image: url(:/images/digital_normal_0.png);
+}
+
+QPushButton:hover#panelButton_0
+{
+        border-image: url(:/images/digital_hover_0.png);
+}
+
+QPushButton#panelButton_1
+{
+        border-image: url(:/images/digital_normal_1.png);
+}
+
+QPushButton:hover#panelButton_1
+{
+        border-image: url(:/images/digital_hover_1.png);
+}
+
+QPushButton#panelButton_2
+{
+        border-image: url(:/images/digital_normal_2.png);
+}
+
+QPushButton:hover#panelButton_2
+{
+        border-image: url(:/images/digital_hover_2.png);
+}
+
+QPushButton#panelButton_3
+{
+        border-image: url(:/images/digital_normal_3.png);
+}
+
+QPushButton:hover#panelButton_3
+{
+        border-image: url(:/images/digital_hover_3.png);
+}
+
+QPushButton#panelButton_4
+{
+        border-image: url(:/images/digital_normal_4.png);
+}
+
+QPushButton:hover#panelButton_4
+{
+        border-image: url(:/images/digital_hover_4.png);
+}
+
+QPushButton#panelButton_5
+{
+        border-image: url(:/images/digital_normal_5.png);
+}
+
+QPushButton:hover#panelButton_5
+{
+        border-image: url(:/images/digital_hover_5.png);
+}
+
+QPushButton#panelButton_6
+{
+        border-image: url(:/images/digital_normal_6.png);
+}
+
+QPushButton:hover#panelButton_6
+{
+        border-image: url(:/images/digital_hover_6.png);
+}
+
+QPushButton#panelButton_7
+{
+        border-image: url(:/images/digital_normal_7.png);
+}
+
+QPushButton:hover#panelButton_7
+{
+        border-image: url(:/images/digital_hover_7.png);
+}
+
+QPushButton#panelButton_8
+{
+        border-image: url(:/images/digital_normal_8.png);
+}
+
+QPushButton:hover#panelButton_8
+{
+        border-image: url(:/images/digital_hover_8.png);
+}
+
+QPushButton#panelButton_9
+{
+        border-image: url(:/images/digital_normal_9.png);
+}
+
+QPushButton:hover#panelButton_9
+{
+        border-image: url(:/images/digital_hover_9.png);
+}
+
+QPushButton#panelButton_minus
+{
+        min-height: 117px;
+        max-height: 117px;
+        border-image: url(:/images/digital_normal_minus.png);
+}
+
+QPushButton:hover#panelButton_minus
+{
+        border-image: url(:/images/digital_hover_minus.png);
+}
+
+QPushButton#panelButton_plus
+{
+        border-image: url(:/images/digital_normal_plus.png);
+}
+
+QPushButton:hover#panelButton_plus
+{
+        border-image: url(:/images/digital_hover_plus.png);
+}
+
+QPushButton#panelButton_dot
+{
+        border-image: url(:/images/digital_normal_dot.png);
+}
+
+QPushButton:hover#panelButton_dot
+{
+        border-image: url(:/images/digital_hover_dot.png);
+}
+
+QPushButton#panelButton_del
+{
+        border-image: url(:/images/del_normal.png);
+}
+
+QPushButton:hover#panelButton_del
+{
+        border-image: url(:/images/del_hover.png);
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget_background" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_5" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_title">
+           <property name="text">
+            <string>请输入</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_6" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_digital_text">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::NoContextMenu</enum>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>10</number>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="panelButton_enter">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="panelButton_cancel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_7" native="true">
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="panelButton_1">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>49</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="panelButton_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>50</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="panelButton_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>51</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3" rowspan="2">
+          <widget class="QPushButton" name="panelButton_minus">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>45</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="panelButton_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>52</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="panelButton_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>53</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="panelButton_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>54</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="panelButton_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>55</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="panelButton_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>56</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="panelButton_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>57</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QPushButton" name="panelButton_plus">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>43</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <widget class="QPushButton" name="panelButton_0">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>143</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>48</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QPushButton" name="panelButton_dot">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="ButtonValue" stdset="0">
+            <char>
+             <unicode>46</unicode>
+            </char>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QPushButton" name="panelButton_del">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="belong" stdset="0">
+            <string>digital_panel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

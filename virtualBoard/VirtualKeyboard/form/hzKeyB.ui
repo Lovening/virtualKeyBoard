@@ -1,0 +1,1891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1085</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#From
+{
+	background-color: #DEDEDE;
+	border: 1px solid #FFFFFF;
+}
+
+QLabel#label_title
+{
+	font-size:  22px;
+	color: #000000;
+}
+
+QLabel#lineEdit_window
+{
+	min-height: 40px;
+	max-height: 40px;
+	min-width: 650px;
+	max-width: 650px;
+	padding-left: 10px;
+	border-image: url(:/images/input_label.png);
+}
+
+QPushButton
+{
+	min-width: 70px;
+	max-width: 70px;
+	min-height: 57px;
+	max-height: 57px;
+	color:#ffffff;
+	font-size:28px;
+	border-image: url(:/images/digital_normal_char);
+}
+QPushButton:hover
+{
+	border-image: url(:/images/digital_hover_char);
+}
+
+QPushButton#panelButton_enter
+{
+	border-image: url(:/images/enter_normal.png);
+}
+
+QPushButton:pressed#panelButton_enter
+{
+	border-image: url(:/images/enter_selected.png);
+}
+
+QPushButton#panelButton_cancel
+{
+	border-image: url(:/images/cancel_normal.png);
+}
+
+QPushButton:pressed#panelButton_cancel
+{
+	border-image: url(:/images/cancel_selected.png);
+}
+
+QPushButton#pushButton_n0
+{
+	border-image: url(:/images/digital_normal_0.png);
+}
+
+QPushButton:hover#pushButton_n0
+{
+	border-image: url(:/images/digital_hover_0.png);
+}
+
+QPushButton#pushButton_n1
+{
+	border-image: url(:/images/digital_normal_1.png);
+}
+
+QPushButton:hover#pushButton_n1
+{
+	border-image: url(:/images/digital_hover_1.png);
+}
+
+QPushButton#pushButton_n2
+{
+	border-image: url(:/images/digital_normal_2.png);
+}
+
+QPushButton:hover#pushButton_n2
+{
+	border-image: url(:/images/digital_hover_2.png);
+}
+
+QPushButton#pushButton_n3
+{
+	border-image: url(:/images/digital_normal_3.png);
+}
+
+QPushButton:hover#pushButton_n3
+{
+	border-image: url(:/images/digital_hover_3.png);
+}
+
+QPushButton#pushButton_n4
+{
+	border-image: url(:/images/digital_normal_4.png);
+}
+
+QPushButton:hover#pushButton_n4
+{
+	border-image: url(:/images/digital_hover_4.png);
+}
+
+QPushButton#pushButton_n5
+{
+	border-image: url(:/images/digital_normal_5.png);
+}
+
+QPushButton:hover#pushButton_n5
+{
+	border-image: url(:/images/digital_hover_5.png);
+}
+
+QPushButton#pushButton_n6
+{
+	border-image: url(:/images/digital_normal_6.png);
+}
+
+QPushButton:hover#pushButton_n6
+{
+	border-image: url(:/images/digital_hover_6.png);
+}
+
+QPushButton#pushButton_n7
+{
+	border-image: url(:/images/digital_normal_7.png);
+}
+
+QPushButton:hover#pushButton_n7
+{
+	border-image: url(:/images/digital_hover_7.png);
+}
+
+QPushButton#pushButton_n8
+{
+	border-image: url(:/images/digital_normal_8.png);
+}
+
+QPushButton:hover#pushButton_n8
+{
+	border-image: url(:/images/digital_hover_8.png);
+}
+
+QPushButton#pushButton_n9
+{
+	border-image: url(:/images/digital_normal_9.png);
+}
+
+QPushButton:hover#pushButton_n9
+{
+	border-image: url(:/images/digital_hover_9.png);
+}
+
+QPushButton#pushButton_a[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_A.png);
+}
+
+QPushButton:hover#pushButton_a[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_A.png);
+}
+
+QPushButton#pushButton_a[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_la.png);
+}
+
+QPushButton:hover#pushButton_a[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_la.png);
+}
+
+
+QPushButton#pushButton_b[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_B.png);
+}
+
+QPushButton:hover#pushButton_b[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_B.png);
+}
+
+QPushButton#pushButton_b[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lb.png);
+}
+
+QPushButton:hover#pushButton_b[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lb.png);
+}
+
+QPushButton#pushButton_c[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_C.png);
+}
+
+QPushButton:hover#pushButton_c[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_C.png);
+}
+
+QPushButton#pushButton_c[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lc.png);
+}
+
+QPushButton:hover#pushButton_c[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lc.png);
+}
+
+QPushButton#pushButton_d[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_D.png);
+}
+
+QPushButton:hover#pushButton_d[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_D.png);
+}
+
+QPushButton#pushButton_d[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_ld.png);
+}
+
+QPushButton:hover#pushButton_d[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_ld.png);
+}
+
+QPushButton#pushButton_e[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_E.png);
+}
+
+QPushButton:hover#pushButton_e[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_E.png);
+}
+
+QPushButton#pushButton_e[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_le.png);
+}
+
+QPushButton:hover#pushButton_e[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_le.png);
+}
+
+QPushButton#pushButton_f[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_F.png);
+}
+
+QPushButton:hover#pushButton_f[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_F.png);
+}
+
+QPushButton#pushButton_f[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lf.png);
+}
+
+QPushButton:hover#pushButton_f[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lf.png);
+}
+
+QPushButton#pushButton_g[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_G.png);
+}
+
+QPushButton:hover#pushButton_g[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_G.png);
+}
+
+QPushButton#pushButton_g[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lg.png);
+}
+
+QPushButton:hover#pushButton_g[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lg.png);
+}
+
+QPushButton#pushButton_h[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_H.png);
+}
+
+QPushButton:hover#pushButton_h[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_H.png);
+}
+
+QPushButton#pushButton_h[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lh.png);
+}
+
+QPushButton:hover#pushButton_h[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lh.png);
+}
+
+QPushButton#pushButton_i[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_I.png);
+}
+
+QPushButton:hover#pushButton_i[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_I.png);
+}
+
+QPushButton#pushButton_i[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_li.png);
+}
+
+QPushButton:hover#pushButton_i[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_li.png);
+}
+
+QPushButton#pushButton_j[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_J.png);
+}
+
+QPushButton:hover#pushButton_j[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_J.png);
+}
+
+QPushButton#pushButton_j[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lj.png);
+}
+
+QPushButton:hover#pushButton_j[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lj.png);
+}
+
+QPushButton#pushButton_k[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_K.png);
+}
+
+QPushButton:hover#pushButton_k[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_K.png);
+}
+
+QPushButton#pushButton_k[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lk.png);
+}
+
+QPushButton:hover#pushButton_k[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lk.png);
+}
+
+QPushButton#pushButton_l[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_L.png);
+}
+
+QPushButton:hover#pushButton_l[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_L.png);
+}
+
+QPushButton#pushButton_l[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_ll.png);
+}
+
+QPushButton:hover#pushButton_l[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_ll.png);
+}
+
+QPushButton#pushButton_m[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_M.png);
+}
+
+QPushButton:hover#pushButton_m[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_M.png);
+}
+
+QPushButton#pushButton_m[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lm.png);
+}
+
+QPushButton:hover#pushButton_m[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lm.png);
+}
+
+QPushButton#pushButton_n[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_N.png);
+}
+
+QPushButton:hover#pushButton_n[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_N.png);
+}
+
+QPushButton#pushButton_n[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_ln.png);
+}
+
+QPushButton:hover#pushButton_n[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_ln.png);
+}
+
+QPushButton#pushButton_o[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_O.png);
+}
+
+QPushButton:hover#pushButton_o[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_O.png);
+}
+
+QPushButton#pushButton_o[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lo.png);
+}
+
+QPushButton:hover#pushButton_o[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lo.png);
+}
+
+QPushButton#pushButton_p[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_P.png);
+}
+
+QPushButton:hover#pushButton_p[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_P.png);
+}
+
+QPushButton#pushButton_p[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lp.png);
+}
+
+QPushButton:hover#pushButton_p[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lp.png);
+}
+
+QPushButton#pushButton_q[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_Q.png);
+}
+
+QPushButton:hover#pushButton_q[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_Q.png);
+}
+
+QPushButton#pushButton_q[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lq.png);
+}
+
+QPushButton:hover#pushButton_q[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lq.png);
+}
+
+QPushButton#pushButton_r[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_R.png);
+}
+
+QPushButton:hover#pushButton_r[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_R.png);
+}
+
+QPushButton#pushButton_r[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lr.png);
+}
+
+QPushButton:hover#pushButton_r[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lr.png);
+}
+
+QPushButton#pushButton_s[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_S.png);
+}
+
+QPushButton:hover#pushButton_s[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_S.png);
+}
+
+QPushButton#pushButton_s[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_ls.png);
+}
+
+QPushButton:hover#pushButton_s[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_ls.png);
+}
+
+QPushButton#pushButton_t[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_T.png);
+}
+
+QPushButton:hover#pushButton_t[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_T.png);
+}
+
+QPushButton#pushButton_t[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lt.png);
+}
+
+QPushButton:hover#pushButton_t[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lt.png);
+}
+
+QPushButton#pushButton_u[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_U.png);
+}
+
+QPushButton:hover#pushButton_u[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_U.png);
+}
+
+QPushButton#pushButton_u[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lu.png);
+}
+
+QPushButton:hover#pushButton_u[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lu.png);
+}
+
+QPushButton#pushButton_v[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_V.png);
+}
+
+QPushButton:hover#pushButton_v[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_V.png);
+}
+
+QPushButton#pushButton_v[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lv.png);
+}
+
+QPushButton:hover#pushButton_v[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lv.png);
+}
+
+QPushButton#pushButton_w[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_W.png);
+}
+
+QPushButton:hover#pushButton_w[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_W.png);
+}
+
+QPushButton#pushButton_w[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lw.png);
+}
+
+QPushButton:hover#pushButton_w[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lw.png);
+}
+
+QPushButton#pushButton_x[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_X.png);
+}
+
+QPushButton:hover#pushButton_x[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_X.png);
+}
+
+QPushButton#pushButton_x[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lx.png);
+}
+
+QPushButton:hover#pushButton_x[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lx.png);
+}
+
+QPushButton#pushButton_y[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_Y.png);
+}
+
+QPushButton:hover#pushButton_y[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_Y.png);
+}
+
+QPushButton#pushButton_y[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_ly.png);
+}
+
+QPushButton:hover#pushButton_y[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_ly.png);
+}
+
+QPushButton#pushButton_z[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_normal_Z.png);
+}
+
+QPushButton:hover#pushButton_z[case = &quot;true&quot;]
+{
+	border-image: url(:/images/digital_hover_Z.png);
+}
+
+QPushButton#pushButton_z[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_normal_lz.png);
+}
+
+QPushButton:hover#pushButton_z[case = &quot;false&quot;]
+{
+	border-image: url(:/images/digital_hover_lz.png);
+}
+
+QPushButton#panelButton_symbol
+{
+	border-image: url(:/images/digital_normal_symbol.png);
+}
+
+QPushButton:hover#panelButton_symbol
+{
+	border-image: url(:/images/digital_hover_symbol.png);
+}
+
+QPushButton#panelButton_caps
+{
+	border-image: url(:/images/digital_normal_caps.png);
+}
+
+QPushButton:hover#panelButton_caps
+{
+	border-image: url(:/images/digital_hover_caps.png);
+}
+
+QPushButton#pushButton_whitespace
+{
+	min-width: 550px;
+	max-width: 550px;
+	min-height: 57px;
+	min-height: 57px;
+	border-image: url(:/images/digital_normal_space.png);
+}
+
+QPushButton:hover#pushButton_whitespace
+{
+	border-image: url(:/images/digital_hover_space.png);
+}
+
+QPushButton#pushButton_is_hanzi[case = &quot;CN&quot;]
+{
+	min-width: 70px;
+	min-height: 57px;
+	border-image: url(:/images/digital_normal_CN.png);
+}
+
+QPushButton:hover#pushButton_is_hanzi[case = &quot;CN&quot;]
+{
+	border-image: url(:/images/digital_hover_CN.png);
+}
+
+QPushButton#pushButton_is_hanzi[case = &quot;EN&quot;]
+{
+	min-width: 70px;
+	min-height: 57px;
+	border-image: url(:/images/digital_normal_EN.png);
+}
+
+QPushButton:hover#pushButton_is_hanzi[case = &quot;EN&quot;]
+{
+	border-image: url(:/images/digital_hover_EN.png);
+}
+
+QPushButton#pushButton_backspace
+{
+	min-width: 130px;	
+	min-height: 57px;
+	border-image:url(:/images/digital_normal_backspace.png)
+}
+
+QPushButton:hover#pushButton_backspace
+{
+	min-width: 130px;	
+	min-height: 57px;
+	border-image:url(:/images/digital_hover_backspace.png)
+}
+
+
+QPushButton#pushButton_shift[case =  &quot;BIG&quot;]
+{
+	min-width: 70px;
+	min-height: 57px;
+	border-image: url(:/images/digital_normal_bigsmall.png);
+}
+
+QPushButton:hover#pushButton_shift[case  =  &quot;BIG&quot;]
+{
+	border-image: url(:/images/digital_hover_bigsmall.png);
+}
+
+QPushButton#pushButton_shift[case  =  &quot;SMALL&quot;]
+{
+	min-width: 70px;
+	min-height: 57px;
+	border-image: url(:/images/digital_normal_smallbig.png);
+}
+
+QPushButton:hover#pushButton_shift[case = &quot;SMALL&quot;]
+{
+	border-image: url(:/images/digital_hover_smallbig.png);
+}
+
+QPushButton#pushButton_enter
+{
+	min-width: 140px;	
+	min-height: 57px;
+	border-image:url(:/images/digital_normal_enter)
+}
+
+QPushButton:hover#pushButton_enter
+{
+	min-width: 140px;	
+	min-height: 57px;
+	border-image:url(:/images/digital_hover_enter)
+}
+
+
+QPushButton#pushButton_CANCEL
+{
+	min-width: 120px;	
+	min-height: 57px;	
+}
+QPushButton#pushButton_CONFIRM
+{
+	min-width: 120px;	
+	min-height: 57px;	
+}
+
+
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_window">
+       <property name="font">
+        <font>
+         <family>文泉驿微米黑</family>
+         <pointsize>25</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_pinyin">
+       <property name="font">
+        <font>
+         <family>文泉驿微米黑</family>
+         <pointsize>25</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_CANCEL">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_CONFIRM">
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>ok</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QPushButton" name="pushButton_hanzi_left">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;&lt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_hanzi_1">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_hanzi_2">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_hanzi_3">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_hanzi_4">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_hanzi_5">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_hanzi_6">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_hanzi_7">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_hanzi_8">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_hanzi_right">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&gt;&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n1">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n2">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n3">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n4">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n5">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n6">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n7">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n8">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n9">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n0">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_gang">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_deng">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>=</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_backspace">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_q">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_w">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_e">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_r">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_t">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_y">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_u">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_i">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_o">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_p">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_zuokuo">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>[</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_youkuo">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>]</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_backsplash">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>\</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_a">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_s">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_d">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_f">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_g">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_h">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_j">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_k">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_l">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_semicolon">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_quote">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>'</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_enter">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_z">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_x">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_c">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_v">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_b">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_n">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_m">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_comma">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>,</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_period">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>.</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_splash">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>/</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <spacer name="horizontalSpacer_9">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_shift">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_whitespace">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_is_hanzi">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_10">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

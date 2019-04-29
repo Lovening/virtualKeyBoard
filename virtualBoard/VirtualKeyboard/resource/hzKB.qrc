@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rsc/fontlib</file>
+        <file>rsc/BIG_small.png</file>
+        <file>rsc/CN_en.png</file>
+        <file>rsc/EN_cn.png</file>
+        <file>rsc/SMALL_big.png</file>
+    </qresource>
+</RCC>
